@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Denis Shi](https://up.htmlacademy.ru/htmlcss/25/user/998481).
-* Наставник: `Неизвестно`.
+* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
 
 ---
 
