@@ -6,30 +6,44 @@
   </head>
 <body>
   <header class="header-inner">
+    <div class="header-top">
     <a class="main-header-logo" href="index.html">
-  <img src="logo.svg" width="200" height="160" alt="Логотип интернет-магазина Техномарт">
+  <img src="img/logo.svg" width="200" height="160" alt="Логотип интернет-магазина Техномарт">
 </a>
-<form action="#" method="post">
+<form action="https://echo.htmlacademy.ru" method="post">
   <label>
-    <input type="image" src="img/icon-search.svg" alt="Поиск">Поиск:
-<input type="search" name="search">
+    <input type="image" src="img/icon-search.svg" alt="Поиск по сайту">
+<input type="search" name="search" placeholder="Поиск">
 </label>
 </form>
-
+<ul class="header-user-info">
+  <li><a href="#">Закладки</a></li>
+  <li><a href="#">Корзина</a></li>
+  <li><a href="#">Оформить заказ</a></li>
+</ul>
+</div>
+<div class="header-midlle">
 <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 <p class="header-contacts">
-+7(812)555-05-55
++7(812)555-05-55<br>
 г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
 </p>
-<section class="user-options">
+<div class="user-options">
 <p>
 <a href="#">Мои заказы</a>
 <a href="#">Личный кабинет</a>
-  </p>
-  </section>
+</p>
+</div>
+<div class="user-profile">
+  <a href="#"><img src="img/icon-user.svg" alt="Иконка вход в профиль клиента магазина"></a>
+<a href="#" name="username">Равшан Джамшутович</a>
+<a href="#"><img src="img/icon-logout.svg" alt="Иконка выхода из личного кабинета клиента"></a>
+</div>
+</div>
+<div class="header-site-menu">
   <nav class="main-navigator">
     <ul class="site-navigation">
-      <li><a href="#">Главная</a></li>
+      <li><a href="index.html">Главная</a></li>
       <li><a href="#">Компания</a></li>
       <li><a href="#">Каталог</a></li>
       <li><a href="#">Новости</a></li>
@@ -38,6 +52,7 @@
       <li><a href="#">Контакты</a></li>
     </ul>
   </nav>
+</div>
   </header>
   <main class="container">
 
@@ -180,19 +195,19 @@
 </li>
 </ul>
 <section class="filters-list">
-      <form action="#" method="post">
+      <form action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
         <legend><h2>Производители</h2></legend>
-    <label><input type="checkbox" name="bosch">Bosch</label>
+    <label><input type="checkbox" name="bosch" checked>Bosch</label>
     <label><input type="checkbox" name="Interscol">Интерскол</label>
-    <label><input type="checkbox" name="makita">Makita</label>
+    <label><input type="checkbox" name="makita" checked>Makita</label>
     <label><input type="checkbox" name="dewalt">Dewalt</label>
     <label><input type="checkbox" name="hitachi">Hitachi</label>
 </fieldset>
 <fieldset>
   <legend><h2>Питание:</h2></legend>
   <label>
-  <input type="radio" name="energy" value="akkumulator">
+  <input type="radio" name="energy" value="akkumulator" checked>
   Аккумуляторные</label>
   <label>
     <input type="radio" name="energy" value="setevye">
@@ -203,8 +218,9 @@
 </section>
 </main>
     <footer class="main-footer">
+      <div class="footer-top-menu">
       <a class="main-footer-logo" href="index.html">
-    <img src="logo.svg" width="180" height="160" alt="Логотип интернет-магазина Техномарт">
+    <img src="img/logo.svg" width="180" height="160" alt="Логотип интернет-магазина Техномарт">
     </a>
     <nav class="footer-navigator">
       <ul class="site-navigation-footer">
@@ -214,6 +230,8 @@
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
+    </div>
+    <div class="footer-middle">
       <ul class="service-navigation-footer">
         <li><a href="#">Материалы</a></li>
         <li><a href="#">Техника</a></li>
@@ -224,8 +242,8 @@
     <p>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
       +7(812)555-05-55
     </p>
-    </section>
-    <section>
+  </div>
+    <div class="footer-down-info">
     <p class="footer-copyright">
     ©2010-2017 Компания "Техномарт"<br>
     Все права защищены
@@ -243,7 +261,7 @@
     <li>Разработано-<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></li>
     </ul>
     </div>
-    </section>
+  </div>
     </footer>
     <section class="modal modal-cart">
     <form class="itemincart" action="#" method="post">
