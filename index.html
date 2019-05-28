@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="header-top">
     <a class="main-header-logo">
-  <img src="img/logo.svg" width="200" height="160" alt="Логотип интернет-магазина Техномарт">
+  <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина Техномарт">
 </a>
 <form action="https://echo.htmlacademy.ru" method="post">
-  <label>
+  <label class="search">
     <input type="image" src="img/icon-search.svg" alt="Поиск по сайту">
 <input type="search" name="search" placeholder="Поиск">
 </label>
@@ -19,15 +22,14 @@
 <ul class="header-user-info">
   <li><a href="#">Закладки</a></li>
   <li><a href="#">Корзина</a></li>
-  <li><a href="#">Оформить заказ</a></li>
-</ul>
+  <li><a class="checkout-button" href="#">Оформить заказ</a></li>
+  </ul>
 </div>
 <div class="header-midlle">
-<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-<p class="header-contacts">
-+7(812)555-05-55<br>
-г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-</p>
+  <p class="header-type-shop">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+<p class="header-phone">
+  +7(812)555-05-55</p>
+<p class="header-adress">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
   <ul class="personal-area-enter">
   <li>
     <a class="enter-bottom" href="#">Войти</a>
@@ -38,7 +40,7 @@
   </ul>
 </div>
 <div class="header-site-menu">
-<nav class="main-navigator">
+<nav class="main-navigation">
   <ul class="site-navigation">
     <li><a>Главная</a></li>
     <li><a href="#">Компания</a></li>
