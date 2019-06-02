@@ -15,7 +15,7 @@ a {
 text-decoration:none;
   }
 
-.main-header {
+.main-header, .header-inner {
   background-color: #f4f7f9;
   color:inherit;
 }
@@ -30,9 +30,22 @@ color: #ffffff;
 background-color: #293449;
 }
 
+a.main-header-logo {
+  background-color: #ee3643;
+  color: inherit;
+}
+a.main-header-logo:hover {
+  background-color: #ca2c37;
+  color: inherit;
+}
+a.main-header-logo:active {
+  background-color: #ba2732;
+  color: inherit;
+}
+
 .header-user-info,
 .personal-area-enter,
-.site-navigation {
+.site-navigation, {
   list-style: none;
 }
 .header-user-info a {
@@ -54,22 +67,33 @@ color: rgba(255, 255, 255, 0.6);
 background-color: #161d29
 }
 
-.checkout-button a {
+a.checkout-button {
   color: #ffffff;
   background-color: #63a63e;
 }
+a.checkout-button:hover {
+  color: #ffffff;
+  background-color: #5fbb2d;
+}
+a.checkout-button:focus {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #518534;
+}
 
 .header-type-shop {
-  font-family: "Cuprum"
+font-family: "Cuprum";
 font-size: 16px;
 font-style: italic;
-  font-weight: normal;
+font-weight: normal;
   line-height: 32px;
   color: #ee3643;
 
   background-color: #f4f7f9;
 }
-
+a.cart-button {
+  color:#ffffff;
+  background-color: #ee3643;
+}
 .header-phone {
 font-size: 21px;
 line-height: 21px;
@@ -85,6 +109,22 @@ border: 3px solid #ffffff;
   font-weight: normal;
   color: #32425c;
 
+  background-color: #f1f5f7;
+}
+.user-options a {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  color: #32425c;
+  background-color: #f1f5f7;
+  text-decoration: underline;
+}
+.user-options a:hover {
+  color: #ee3643;
+  background-color: #f1f5f7;
+}
+.user-options a:focus {
+  color: rgba(50, 66, 92, 0.3);
   background-color: #f1f5f7;
 }
 
@@ -115,4 +155,243 @@ border: 3px solid #ffffff;
 }
 .site-navigation a {
   color: #ffffff;
+}
+a.company-button:hover {
+background-color: #293449;
+color: inherit;
+}
+a.company-button:active {
+background-color: #1d2739;
+color: rgba(255, 255, 255, 0.5);
+}
+
+
+.delivery-columns h2 {
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+  background-color: inherit;
+  text-transform: uppercase;
+  }
+.delivery-columns p {
+  font-family: PT Sans;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+  background-color: inherit;
+}
+.transport-companies {
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: left;
+  color: #000000;
+  background-color: inherit;
+  list-style: none;
+}
+a.delivery-buttons {
+  background-color: #ee3643;
+  font-style: Cuprum;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+a.main-footer-logo {
+  background-color: #ee3643;
+}
+.site-navigation-footer,
+.service-navigation-footer,
+.social-icon,
+.feedback-contacts {
+  list-style: none;
+}
+.site-navigation-footer a:hover {
+  text-decoration: underline;
+}
+.service-navigation-footer a:hover {
+  text-decoration: underline;
+}
+.site-navigation-footer a:active {
+color: rgba(241, 245, 247, 0.5)
+
+}
+.service-navigation-footer a:active {
+color: rgba(255, 209, 128, 0.5)
+
+}
+.main-footer {
+    font-style: Cuprum;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: left;
+    color: #f1f5f7;
+    background-color: #32425c;
+}
+.site-navigation-footer a {
+  color: #f1f5f7;
+  background-color: #32425c;
+}
+.footer-middle a {
+  color: #ffd180;
+  background-color: #32425c;
+}
+.main-footer .footer-down-info {
+  color: inherit;
+  background-color: #293449;
+}
+.social-icon .social-button {
+  background-color: #212a3a;
+}
+.social-icon a:hover {
+  background-color: #ee3643;
+}
+.social-icon a:active {
+  background-color: #ee3643;
+}
+
+a.feedback-mail {
+color:#ffd180;
+
+}
+a.feedback-site {
+color:#ffd180;
+}
+
+.feedback-contacts a:hover {
+  color: #ffd180;
+  text-decoration: underline;
+}
+.feedback-contacts a:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+.footer-down-info p {
+  font-family: inherit;
+  color: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  background-color: inherit;
+}
+.feedback-contacts li {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  color: #ffffff;
+}
+.userinfo {
+  display: none;
+}
+.modal {
+  display: none;
+}
+
+
+.user-profile a {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  color:#000000;
+  background-color: #ffffff;
+}
+.user-profile a:hover {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  color:#000000;
+  background-color: #ffffff;
+}
+.user-profile a:focus {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  color:rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+.main-navigation .site-navigation {
+  list-style: none;
+}
+.breadcrumbs {
+  list-style: none;
+  font-style: PT Sans;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+.breadcrumbs a {
+  font-style: PT Sans;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+.page-title {
+  font-style: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #32425c;
+  background-color: #f2f6f8;
+  text-transform: uppercase;
+}
+
+.catalog-page a{
+font-family: PT Sans;
+font-size: 18px;
+line-height: 18px;
+font-weight: bold;
+text-align: center;
+color: #000000;
+background-color: #ffffff;
+}
+.catalog-list {
+list-style: none;
+}
+.catalog-item strike {
+  font-size: 17px;
+color: #999999;
+}
+.catalog-item .price-button {
+  color: #ffffff;
+  text-align: center;
+  line-height: 18px;
+  background-image: url("img/item-button.png");
+  background-color: #ee3643;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.filters-list h2 {
+  font-family: PT Sans;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: left;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+.filters-list label{
+font-family: PT Sans;
+font-weight: normal;
+line-height: 20px;
+text-align: left;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
 }

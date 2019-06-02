@@ -20,14 +20,14 @@
 </label>
 </form>
 <ul class="header-user-info">
-  <li><a href="#">Закладки</a></li>
-  <li><a href="#">Корзина</a></li>
+  <li><a href="#"><img src="img/icon-bookmark.svg" alt="Закладки">Закладки</a></li>
+  <li><a href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a></li>
   <li><a class="checkout-button" href="#">Оформить заказ</a></li>
   </ul>
 </div>
 <div class="header-midlle">
   <p class="header-type-shop">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-<p class="header-phone">
+<p class="header-phone"><img src="img/icon-phone.svg" alt="+7(812)555-05-55">
   +7(812)555-05-55</p>
 <p class="header-adress">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
   <ul class="personal-area-enter">
@@ -43,7 +43,7 @@
 <nav class="main-navigation">
   <ul class="site-navigation">
     <li><a>Главная</a></li>
-    <li><a href="#">Компания</a></li>
+    <li ><a class="company-button" href="#">Компания</a></li>
     <li><a href="inner.html">Каталог</a></li>
     <li><a href="#">Новости</a></li>
     <li><a href="#">Спецпредложения</a></li>
@@ -54,10 +54,11 @@
 </div>
 </header>
 <main>
-  <h1 class="visually-hidden">Техномарт</h1>
+  <h1 hidden="true">Техномарт</h1>
   <!--Далее здесь будут те блоки, что пока в задании залиты красным цветом-->
+<div class="delivery-columns">
   <section class="company">
-    <h2>Компания Техномарт</h2>
+    <h2>Компания <q>Техномарт</q></h2>
     <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
        строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
     </p>
@@ -65,12 +66,12 @@
       Техномарт работает со многими транспортными компаниями:<br>
     </p>
     <ul class="transport-companies">
-<li>Деловые линии</li>
-<li>Автотрейдинг</li>
-<li>ЖелДорЭкспедиция</li>
+<li><b>Деловые линии</b></li>
+<li><b>Автотрейдинг</b></li>
+<li><b>ЖелДорЭкспедиция</b></li>
     </ul>
     <p>
-    <a href="company.html">Подробнее о компании</a>
+    <a class="delivery-buttons" href="company.html">Подробнее о компании</a>
   </p>
   </section>
   <section class="contacts">
@@ -80,20 +81,21 @@
       <img src="img/map.png" widht="200" height="100" alt="Наш офис на карте">
     </a>
     <p>
-      <a href="contacts.html">Заблудились? Напишите нам!</a>
+      <a class="delivery-buttons" href="contacts.html">Заблудились? Напишите нам!</a>
     </p>
   </section>
+</div>
 </main>
 <footer class="main-footer">
 <div class="footer-top-menu">
-  <a class="main-footer-logo" href="index.html">
-<img src="logo.svg" width="180" height="160" alt="Логотип интернет-магазина Техномарт">
-</a>
+  <a class="main-footer-logo" href="#">
+    <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина Техномарт">
+  </a>
 <nav class="footer-navigator">
   <ul class="site-navigation-footer">
     <li><a href="#">Компания</a></li>
     <li><a href="#">Новости</a></li>
-    <li><a href="#">Каталог</a></li>
+    <li><a href="inner.html">Каталог</a></li>
     <li><a href="#">Доставка</a></li>
     <li><a href="#">Контакты</a></li>
   </ul>
@@ -116,21 +118,21 @@
 Все права защищены
 </p>
 <div class="footer-social">
-  <ul>
-    <li><a class="social-button" href="#">Вконтакте</a></li>
-    <li><a class="social-button" href="#">Фейсбук</a></li>
-    <li><a class="social-button" href="#">Инстаграм</a></li>
+  <ul class="social-icon">
+    <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Мы в Контакте"></a></li>
+    <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Мы в Фейсбук"></a></li>
+    <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Мы в Инстаграме"></a></li>
   </ul>
 </div>
 <div class="footer-feedback">
-<ul>
-<li>Обратная связь:<a href="#">mail@htmlacademy.ru</a></li>
-<li>Разработано-<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></li>
+<ul class="feedback-contacts">
+<li>Обратная связь:<a class="feedback-mail" href="#">mail@htmlacademy.ru</a></li>
+<li>Разработано-<a class="feedback-site" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></li>
 </ul>
 </div>
 </div>
 </footer>
-<form action="https://echo.htmlacademy.ru" method="post">
+<form  class="userinfo" action="https://echo.htmlacademy.ru" method="post">
   <fieldset>
   <label>Ваше имя:
   <input type="text" name="username" placeholder="Имя Фамилия">
