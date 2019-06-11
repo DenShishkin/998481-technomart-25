@@ -161,7 +161,13 @@ a.checkout-button:focus {
   align-items: center;
   margin-bottom: 44px;
 }
+.content-middle {
+  width: 196px;
+  height: 60px;
+  margin-bottom: 44px;
+  text-align: left;
 
+}
 
 .header-type-shop {
 font-family: "Cuprum";
@@ -171,6 +177,7 @@ font-weight: normal;
 line-height: 32px;
 color: #ee3643;
 background-color: #f4f7f9;
+text-align: left;
 }
 a.cart-button {
   color:#ffffff;
@@ -233,6 +240,9 @@ min-height: 45px;
   color: rgba(0, 0, 0, 0.3);
   background-color: #f1f5f7;
 }
+.header-site-menu {
+  overflow: hidden;
+}
 .site-navigation {
 display:flex;
 align-items: center;
@@ -242,8 +252,7 @@ justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
-  padding-top: 22px;
-  padding-bottom: 26px;
+
   padding-left: auto;
   padding-right: auto;
   font-size: 17px;
@@ -255,6 +264,7 @@ justify-content: space-around;
 
 .site-navigation a {
   color: #ffffff;
+height: 60px;
 }
 a.company-button:hover {
 background-color: #293449;
@@ -264,8 +274,21 @@ a.company-button:active {
 background-color: #1d2739;
 color: rgba(255, 255, 255, 0.5);
 }
+.delivery-columns {
 
-
+  display:flex;
+  justify-content: space-between;
+  padding-top: 82px;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 86px;
+}
+.company {
+  min-height: 454px;
+}
+.contacts {
+  min-height: 454px;
+}
 .delivery-columns h2 {
   font-family: inherit;
   font-size: 30px;
@@ -305,6 +328,36 @@ a.delivery-buttons {
   color: #ffffff;
   text-transform: uppercase;
 }
+.main-footer {
+  margin-top: 86px;
+  min-height: 300px;
+}
+.footer-top-menu {
+  width: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.main-footer-logo {
+  margin-left: 130px;
+  margin-right: 173px;
+  margin-bottom: 32px;
+  padding-left: 41px;
+  padding-right: 41px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.site-navigation-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 608px;
+  margin-bottom: 45px;
+}
+.site-navigation-footer li {
+padding-right:60px;
+margin-top: 62px;
+}
 a.main-footer-logo {
   background-color: #ee3643;
 }
@@ -341,6 +394,30 @@ color: rgba(255, 209, 128, 0.5)
   color: #f1f5f7;
   background-color: #32425c;
 }
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 0 auto;
+}
+.footer-middle-adress {
+  margin-left: 130px;
+  height: 40px;
+  width: 322px;
+  margin-right: 91px;
+}
+
+.service-navigation-footer {
+  display: flex;
+  justify-content: space-between;
+
+  }
+.service-navigation-footer li {
+  padding-right: 60px;
+
+
+}
+
 .footer-middle a {
   color: #ffd180;
   background-color: #32425c;
@@ -375,6 +452,47 @@ color:#ffd180;
   color: #ee3643;
   text-decoration: none;
 }
+.footer-down-info{
+  display: flex;
+  width: 0 auto;
+  justify-content: space-between;
+}
+.footer-copyright {
+  height: 33px;
+  width: 228px;
+  margin-left: 131px;
+  margin-right: 161px;
+  margin-bottom: 35px;
+  margin-top: 39px;
+}
+.social-icon {
+  display: flex;
+  justify-content:space-between;
+  width: 132px;
+  margin-top:35px;
+  margin-right: 119px;
+}
+.social-icon li {
+  height: 42px;
+  width: 42px;
+}
+
+
+
+.feedback-contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 145px;
+  margin-top: 39px;
+  margin-bottom: 34px;
+
+  }
+.feedback-mail li {
+  width: 135px;
+  height: 32px;
+
+  }
+
 .footer-down-info p {
   font-family: inherit;
   color: inherit;
