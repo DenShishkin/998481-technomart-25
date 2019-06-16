@@ -67,12 +67,13 @@
 <main>
   <h1 hidden="true">Техномарт</h1>
   <!--Далее здесь будут те блоки, что пока в задании залиты красным цветом-->
-<div class="delivery-columns">
+<div class=" container delivery-columns">
   <section class="company">
     <h2>Компания <q>Техномарт</q></h2>
     <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
        строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
     </p>
+    <div class="delivery-info">
     <p>Мы можем доставить ваш товар в самые отдаленные точки Росиии!<br>
       Техномарт работает со многими транспортными компаниями:<br>
     </p>
@@ -81,26 +82,27 @@
 <li><b>Автотрейдинг</b></li>
 <li><b>ЖелДорЭкспедиция</b></li>
     </ul>
+  </div>
     <p>
     <a class="delivery-buttons" href="company.html">Подробнее о компании</a>
   </p>
   </section>
   <section class="contacts">
     <h2>Контакты</h2>
-    <p>Вы можете забрать товар сами, заехав к нам в офис:</p>
+    <p class="contacts-text">Вы можете забрать товар сами,<br> заехав к нам в офис:</p>
     <a class="map" href="#">
-      <img src="img/map.png" widht="200" height="100" alt="Наш офис на карте">
+      <img src="img/map.png" widht="300" height="158" alt="Наш офис на карте">
     </a>
     <p>
-      <a class="delivery-buttons" href="contacts.html">Заблудились? Напишите нам!</a>
+      <a class="contacts-buttons" href="contacts.html">Заблудились? Напишите нам!</a>
     </p>
   </section>
 </div>
 </main>
 <footer class="main-footer">
-<div class="footer-top-menu">
+<div class="container footer-top-menu">
   <a class="main-footer-logo" href="#">
-    <img src="img/logo.svg" width="220" height="68" alt="Логотип интернет-магазина Техномарт">
+    <img src="img/logo.svg" width="" height="" alt="Логотип интернет-магазина Техномарт">
   </a>
 <nav class="footer-navigator">
   <ul class="site-navigation-footer">
@@ -110,11 +112,13 @@
     <li><a href="#">Доставка</a></li>
     <li><a href="#">Контакты</a></li>
   </ul>
+</nav>
 </div>
-<div class="footer-middle">
+<div class="container footer-middle">
   <p class="footer-middle-adress">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
     +7(812)555-05-55
   </p>
+  <nav class="navigation-footer">
   <ul class="service-navigation-footer">
     <li><a href="#">Материалы</a></li>
     <li><a href="#">Техника</a></li>
@@ -124,15 +128,16 @@
 </nav>
 </div>
 <div class="footer-down-info">
+  <div class="container footer-down-container">
 <p class="footer-copyright">
 ©2010-2017 Компания "Техномарт"<br>
 Все права защищены
 </p>
 <div class="footer-social">
   <ul class="social-icon">
-    <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Мы в Контакте"></a></li>
-    <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Мы в Фейсбук"></a></li>
-    <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Мы в Инстаграме"></a></li>
+    <li><a class="social-button social-vk" href="#"><img src="img/vk-icon.svg" alt="Мы в Контакте"></a></li>
+    <li><a class="social-button social-fb" href="#"><img src="img/fb-icon.svg" alt="Мы в Фейсбук"></a></li>
+    <li><a class="social-button social-in" href="#"><img src="img/insta-icon.svg" alt="Мы в Инстаграме"></a></li>
   </ul>
 </div>
 <div class="footer-feedback">
@@ -140,6 +145,7 @@
 <li>Обратная связь:<a class="feedback-mail" href="#">mail@htmlacademy.ru</a></li>
 <li>Разработано-<a class="feedback-site" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></li>
 </ul>
+</div>
 </div>
 </div>
 </footer>
