@@ -33,7 +33,7 @@ font-style: normal;
 font-weight: normal;
 color: #ffffff;
 background-color: #293449;
-min-height: 42px;
+
 margin-bottom: 46px;
 }
 .container {
@@ -48,13 +48,12 @@ margin-bottom: 46px;
 }
 
 .main-header-logo {
-height: 47px;
-width: 220px;
-margin-right: 17px;
-padding-right: 56px;
-padding-left: 55px;
-padding-top: 13px;
-padding-bottom: 15px;
+  margin-right: 17px;
+  padding-right: 56px;
+  padding-left: 55px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+
 
 }
 
@@ -107,9 +106,10 @@ width: 270px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+padding: 0;
+margin: 0;
   min-height: 42px;
-  width: 450px;
+width: 450px;
 
 }
 .header-user-info li {
@@ -187,6 +187,10 @@ text-align: left;
 a.cart-button {
   color:#ffffff;
   background-color: #ee3643;
+  padding-left: 17px;
+  padding-right: 26px;
+padding-top: 14px;
+padding-bottom: 13px;
 }
 .header-phone {
 font-size: 21px;
@@ -257,13 +261,16 @@ min-height: 45px;
 .site-navigation {
 display:flex;
 align-items: center;
-justify-content: space-around;
-margin-right: 130px;
+justify-content:space-around;
+margin-bottom: 60px;
   font-size: 17px;
   line-height: 17px;
   font-weight: normal;
   color: #ffffff;
   background-color: #32425c;
+padding: 0px;
+margin:0px;
+
 }
 
 .site-navigation a {
@@ -273,15 +280,33 @@ padding-top: 22px;
 padding-bottom: 26px;
 padding-left: 31px;
 padding-right: 31px;
+
 }
-a.company-button:hover {
+
+
+
+.site-navigation a:hover {
 background-color: #293449;
 color: inherit;
 }
-a.company-button:active {
+.site-navigation a:active {
 background-color: #1d2739;
 color: rgba(255, 255, 255, 0.5);
 }
+.header-username {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head-user-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .delivery-columns {
 
   display:flex;
@@ -395,7 +420,7 @@ justify-content: space-between;
 
 }
 .site-navigation-footer li{
-padding-top: 42px;
+
 padding-bottom: 13px;
 padding-left: 60px;
 
@@ -512,16 +537,16 @@ justify-content: space-between;
 align-items: center;
 }
 .social-icon a {
-  display: inline-block;
+  display: flex;
   width: 42px;
   height: 42px;
   vertical-align: middle;
   border-radius: 21px;
-  
+  align-items: center;
+  justify-content: center;
+
 }
 .social-icon li {
-
-
   padding-left: 3px;
 }
 
@@ -606,6 +631,7 @@ margin-right: 15px;
   background-color: #ffffff;
   text-transform: uppercase;
 }
+
 .page-title {
   font-family: "Cuprum";
   font-size: 30px;
@@ -614,6 +640,11 @@ margin-right: 15px;
   color: #32425c;
   background-color: #f2f6f8;
   text-transform: uppercase;
+}
+.catalog-interface {
+  display: flex;
+  justify-content: space-between;
+  align-items:stretch;
 }
 
 .catalog-page a{
@@ -626,8 +657,30 @@ color: #000000;
 background-color: #ffffff;
 }
 .catalog-list {
+  display: flex;
+  justify-content: space-between;
 list-style: none;
+padding: 0;
+margin: 0;
 }
+.filter-manufacturers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-energy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.catalog-item {
+  border: solid 1px #e5e5e5;
+  margin: 20px;
+
+}
+
 .catalog-item strike {
   font-size: 17px;
 color: #999999;
