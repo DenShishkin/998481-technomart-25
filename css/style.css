@@ -20,9 +20,10 @@ text-decoration:none;
   background-color: #f4f7f9;
   color:inherit;
 }
-.main-header {
+.main-header, .header-inner {
   margin-bottom: 59px;
   min-height: 320px;
+  padding-bottom: 60px;
 
 }
 
@@ -646,6 +647,10 @@ margin-right: 15px;
   justify-content: space-between;
   align-items:stretch;
 }
+.filters-list {
+  margin-right: 20px;
+}
+
 
 .catalog-page a{
 font-family: "PT Sans";
@@ -658,10 +663,11 @@ background-color: #ffffff;
 }
 .catalog-list {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
 list-style: none;
 padding: 0;
 margin: 0;
+flex-wrap: wrap;
 }
 .filter-manufacturers {
   display: flex;
@@ -677,7 +683,11 @@ margin: 0;
 }
 .catalog-item {
   border: solid 1px #e5e5e5;
-  margin: 20px;
+  margin-right:20px ;
+  margin-bottom: 20px;
+  width: ;
+  height: 318px;
+  text-align: center;
 
 }
 
@@ -697,6 +707,7 @@ color: #999999;
 
 .filters-list h2 {
   font-family: "PT Sans";
+  font-size: 17px;
   font-weight: bold;
   line-height: 30px;
   text-align: left;
