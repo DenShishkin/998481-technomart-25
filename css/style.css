@@ -338,26 +338,101 @@ color: rgba(255, 255, 255, 0.5);
   margin: 0;
   padding: 0;
 }
-.service-categories-first li,
-.slider-service-categories-second li
- {
-  background-color: yellow;
-  width: ;
-  height: ;
+ul .service-categories-materials,
+ul .service-categories-instruments {
   margin-right: 20px;
   margin-bottom: 20px;
+}
+ul .service-categories-equipments {
+  margin-bottom: 20px;
+  margin-right: 0px;
+}
+ul .service-categories-discounts {
+margin-bottom: 20px;
+margin-right: 0px;
+}
 
+li.categories {
+  box-sizing: border-box;
+  width: 300px;
+  height: 123px;
+  padding-bottom: 22px;
+  padding-left: 22px;
+  padding-top: 26px;
+
+}
+.categories h3{
+  font-family: Cuprum;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 15px;
+
+}
+a.categories-entrance {
+  display: block;
+  background: #000000;
+  opacity: 0.1;
+  font-family:  "Cuprum";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 135px;
+}
+li.service-categories-materials {
+  background-color: #ffbf47;
+  background-image: url("../img/icon-bucket.svg");
+background-repeat: no-repeat;
+background-position:213px 31px;
+}
+li.service-categories-instruments {
+    background-color: #3bbce3;
+    background-image: url("../img/icon-2-drill.svg");
+    background-repeat: no-repeat;
+    background-position:197px 33px;
+}
+li.service-categories-equipments {
+      background-color: #dc91d8;
+      background-image: url("../img/icon-3-tractor.svg");
+      background-repeat: no-repeat;
+      background-position:191px 31px;
+}
+li.service-categories-discounts {
+      background-color: #8ed78f;
+      background-image: url("../img/icon-4-cart.svg");
+      background-repeat: no-repeat;
+      background-position:196px 26px;
+}
+li.service-categories-delivery {
+      background-color: #ffc047;
+      background-image: url("../img/icon-5-truck.svg");
+      background-repeat: no-repeat;
+      background-position:191px 32px;
+}
+.service-categories-slider {
+  margin: 0;
+  padding: 0;
 }
 
 .service-categories-slider {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 .slider-area {
-  position:relative;
-  background-color: grey;
+margin: 0;
+padding: 0;
 
 }
 .slider-area-image {
@@ -368,12 +443,13 @@ color: rgba(255, 255, 255, 0.5);
   list-style: none;
 
 }
+
 .slider-item {
   display:none;
   width: 620px;
-  height:266 ;
-  padding-bottom: 23px;
-  padding-top: 26px;
+  height:266px ;
+padding: 27px 24px 22px;
+  box-sizing: border-box;
 }
 
 .slider-item:nth-child(2) {
@@ -399,11 +475,8 @@ line-height: 36px;
 text-align: left;
 color: #ffffff;
 
-max-width: 94px;
 margin: 0;
 margin-bottom: 8px;
-margin-left: 24px;
-
 }
 .slider-item p{
   font-family: Cuprum;
@@ -413,14 +486,12 @@ margin-left: 24px;
   line-height: 24px;
   text-align: left;
   color: #ffffff;
-
-  max-width: ;
 margin: 0;
 margin-bottom: 124px;
-margin-left: 25px;
+
 }
 a.slider-button {
-  display: block;
+  display: table;
   background-color: #ee3643;
   font-family:  "Cuprum";
   font-size: 14px;
@@ -434,11 +505,10 @@ a.slider-button {
   padding-bottom: 14px;
   padding-left: 49px;
   padding-right: 45px;
-margin-right: 400px;
-margin-bottom: 22px;
-margin-left: 25px;
+margin: 0;
 
 }
+
 a.slider-button:hover,
 a.slider-button:focus {
   background-color: #ca2c37;
@@ -446,16 +516,18 @@ a.slider-button:focus {
 a.slider-bottom:active {
   background-color: #ba2732;
 }
+
 .slider-controls {
+
   position: absolute;
   left: 50%;
   bottom: 36px;
   z-index: 100;
-  width:;
   height: 10px;
   text-align:center;
   font-size: 0;
   transform: translateX(-50%);
+
 }
 .slider-controls i {
   position: relative;
@@ -464,8 +536,6 @@ a.slider-bottom:active {
   height:10px;
   padding: 6px;
   margin-right: 10px;
-
-
   border-radius: 50%;
   cursor: pointer;
 }
@@ -473,9 +543,8 @@ a.slider-bottom:active {
   content: "";
   width:10px ;
   height:10px;
-  background: #ffffff;
+  background: red;
   border-radius: 50%;
-
   position: absolute;
   top: 6px;
   left:6px;
@@ -486,7 +555,6 @@ position: absolute;
 left: 50%;
 top: 50%;
 z-index: 2;
-
 width: 6px;
 height: 6px;
 margin:;
