@@ -15,6 +15,26 @@ body {
 a {
 text-decoration:none;
   }
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input [type="checkbox"].visually-hidden,
+input [type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path:inset (100%);
+  clip:rect (0 0 0 0);
+  overflow: hidden;
+}
+
+
 
 .main-header, .header-inner {
   background-color: #f4f7f9;
@@ -335,29 +355,40 @@ color: rgba(255, 255, 255, 0.5);
   margin: 0;
   padding: 0;
 }
+.slider-area {
+  position:relative;
+  background-color: grey;
 
+}
 .slider-area-image {
-  position: relative;
+
   background-color: #ffffff;
   margin: 0;
   padding: 0;
   list-style: none;
+
 }
 .slider-item {
   display:none;
+  width: 620px;
+  height:266 ;
+  padding-bottom: 23px;
+  padding-top: 26px;
 }
 
-.slider-item:nth-child(1) {
+.slider-item:nth-child(2) {
   display: block;
 }
-.slider-item:nth-child(1) {
-  background-image: url("img/slider-image-drill.jpg");
-  background-repeat: no-repeat;
-}
 .slider-item:nth-child(2) {
-  background-image: url("img/slider-image-perforator.jpg");
+  background-image: url("../img/slider-image-drill.jpg");
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 50% 50%;
+
+}
+.slider-item:nth-child(1) {
+  background-image: url("../img/slider-image-perforator.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .slider-item h3{
 font-family: Cuprum;
@@ -366,10 +397,13 @@ font-weight: bold;
 font-style: normal;
 line-height: 36px;
 text-align: left;
+color: #ffffff;
 
 max-width: 94px;
 margin: 0;
 margin-bottom: 8px;
+margin-left: 24px;
+
 }
 .slider-item p{
   font-family: Cuprum;
@@ -378,12 +412,14 @@ margin-bottom: 8px;
   font-style: normal;
   line-height: 24px;
   text-align: left;
+  color: #ffffff;
 
   max-width: ;
-  margin: 0;
-  margin-bottom: 124px;
+margin: 0;
+margin-bottom: 124px;
+margin-left: 25px;
 }
-a.slider-bottom {
+a.slider-button {
   display: block;
   background-color: #ee3643;
   font-family:  "Cuprum";
@@ -396,11 +432,15 @@ a.slider-bottom {
   border-radius: 3px;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left:49px ;
+  padding-left: 49px;
   padding-right: 45px;
+margin-right: 400px;
+margin-bottom: 22px;
+margin-left: 25px;
+
 }
-a.slider-bottom:hover,
-a.slider-bottom:focus {
+a.slider-button:hover,
+a.slider-button:focus {
   background-color: #ca2c37;
 }
 a.slider-bottom:active {
@@ -424,16 +464,16 @@ a.slider-bottom:active {
   height:10px;
   padding: 6px;
   margin-right: 10px;
-  background-color: green;
+
 
   border-radius: 50%;
   cursor: pointer;
 }
-.slider-controls i::after{
+.slider-controls i::after {
   content: "";
   width:10px ;
   height:10px;
-  background-color: red;
+  background: #ffffff;
   border-radius: 50%;
 
   position: absolute;
@@ -442,6 +482,18 @@ a.slider-bottom:active {
   z-index: 1;
 }
 .slider-controls .active::before {
+position: absolute;
+left: 50%;
+top: 50%;
+z-index: 2;
+
+width: 6px;
+height: 6px;
+margin:;
+
+background-color: inherit;
+border: 1px solid #ee3643;
+border-radius: 50%;
   }
 
 .delivery-columns {
