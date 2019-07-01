@@ -106,14 +106,18 @@ a.main-header-logo:active {
 .search-form {
 
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 .search-form input {
+position: relative;
 text-transform: capitalize;
 background-color: #293449;
 border: 0;
+width: 270px;
+height: 42px;
+
 }
 .search {
 display:flex;
@@ -132,9 +136,13 @@ width: 270px;
   color: inherit;
 }
 .search-button {
+position: absolute;
   background-color: #293449;
   fill: #ffffff;
   border: 0;
+  padding: 0;
+padding-right:15px;
+padding-left: 17px;
 }
 
 .header-user-info {
@@ -1126,9 +1134,7 @@ flex-wrap: wrap;
 .catalog-goods-item:nth-child(4n) {
   margin-right: 0;
 }
-.catalog-goods-item .title-item:nth-child(3n) {
-  margin-bottom: 45px;
-}
+
 .catalog-main .catalog-goods-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -1214,10 +1220,14 @@ text-transform: uppercase;
   max-width: 100%;
 }
 .catalog-goods-item .title-item {
-  min-height: 40px;
+height: 33px;
   padding: 0 33px;
   margin-top: 10px;
   margin-bottom: 15px;
+}
+.catalog-goods-item .title-item:nth-child(4n) {
+
+  margin-bottom: 45px;
 }
 .catalog-goods-item .old-price {
   min-height: 20px;
@@ -1394,7 +1404,7 @@ margin-bottom: 74px;
 
 }
 
-.services-options-list {
+ul.services-options-list {
   position: relative;
   list-style: none;
   margin: 0;
@@ -1402,16 +1412,17 @@ margin-bottom: 74px;
   margin-right: 80px;
   margin-bottom: 99px;
   }
-  .services-options-list::after {
+  ul.services-options-list::after {
     content: "";
     position: absolute;
     width: 10px;
     height: 200px;
     right: 0;
-    bottom: 40px;
+    top: 50%;
+    transform:translateY(-50%);
     opacity: 1;
 
-    background-image: url("../img/shadow-services.jpg");
+    background-image: url("../img/shadow_mal.png");
     background-repeat: no-repeat;
     }
 
