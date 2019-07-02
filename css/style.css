@@ -136,11 +136,11 @@ padding-left: 49px;
   font-weight: normal;
   color: #ffffff;
   }
-.search-form input:focus {
+.search-item input:focus + button {
   background-color: #ffffff;
 }
-.search-form button:focus {
-  background-color: #ffffff;
+.search-item input:focus + button path{
+  fill: #ee3643;
 }
 .search {
 display:flex;
