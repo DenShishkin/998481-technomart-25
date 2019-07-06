@@ -1446,7 +1446,7 @@ font-size: 0;
   cursor: pointer;
   user-select: none;
 }
-.filter-manufacturers-option label::before {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   width: 23px;
@@ -1456,9 +1456,7 @@ font-size: 0;
   background-image: url("../img/checkbox-on-filter.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
-
 
 .info-block-perforators {
   background-color: #f4f7f9;
@@ -1545,6 +1543,7 @@ flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 52px;
 }
 .catalog-goods-item {
   font-size: 18px;
@@ -1874,4 +1873,40 @@ a.option-button:active{
   box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
   background-color: #ffffff;
   color: #32425c;
+}
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 60px;
+}
+.pagination-item {
+  margin-right: 10px;
+}
+.pagination-item:last-child {
+  margin-right: 0;
+}
+.pagination-item a {
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 17px;
+  padding-right: 15px;
+  border: solid 1px #e5e5e5;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.pagination-item a:hover,
+.pagination-item a:focus {
+  border: solid 1px #bdc6ca;
+}
+.pagination-item a:active {
+  border: solid 1px #ee3643;
+}
+.pagination-item-current a {
+  background-color: #ee3643;
+  color: #ffffff;
 }
