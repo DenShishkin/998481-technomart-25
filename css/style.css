@@ -19,9 +19,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-.visually-hidden:not(:focus):not(:active),
-input [type="checkbox"].visually-hidden,
-input [type="radio"].visually-hidden {
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1271,10 +1271,32 @@ margin-right: 46px;
 li .filter-up {
   margin-right: 21px;
 }
-.filter-up img,
-.filter-down img {
-opacity: 0.3;
+.filter-up path,
+.filter-down path {
+  opacity: 0.5;
 }
+.filter-up:hover path,
+.filter-up:focus path {
+fill: #000000;
+opacity: 1;
+
+}
+.filter-up:active path {
+fill: #ee3643;
+opacity: 1;
+}
+
+.filter-down:hover path,
+.filter-down:focus path {
+fill: #000000;
+opacity: 1;
+
+}
+.filter-down:active path {
+fill: #ee3643;
+opacity: 1;
+}
+
 .filter-type-price {
   position: relative;
 }
@@ -1325,6 +1347,10 @@ opacity: 0.3;
 }
 .filters-option-type img:focus {
   opacity: 1;
+}
+.filters-option-type img:active {
+  opacity: 1;
+  color: #ee3643;
 }
 .filter-range-title {
   margin: 0;
@@ -1425,7 +1451,7 @@ font-size: 0;
   .filters-list fieldset {
     padding: 0;
     margin: 0;
-    margin-bottom: 45px;
+    margin-bottom: 75px;
     border: none;
   }
 .product-filter ul {
@@ -1446,16 +1472,61 @@ font-size: 0;
   cursor: pointer;
   user-select: none;
 }
-.filter-input-checkbox:checked + label::before {
+.filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 25px;
   left:-31px;
-
-  background-image: url("../img/checkbox-on-filter.svg");
+  opacity: 0.5;
+  background-image: url("../img/checkbox-off-filter.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+.filter-input-checkbox:checked + label::before {
+  background-image: url("../img/checkbox-on-filter.svg");
+  opacity: 0.5;
+}
+.filter-input-checkbox + label:hover::before,
+.filter-input-checkbox + label:focus::before,
+.filter-input-radio + label:hover::before,
+.filter-input-radio + label:focus::before {
+  opacity: 0.8;
+}
+.filter-input-checkbox:disabled + label::before,
+ .filter-input-radio:disabled + label::before {
+  background-image: url("../img/checkbox-on-filter.svg");
+  opacity: 0.3;
+}
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left:-31px;
+  opacity: 0.5;
+  background-image: url("../img/radio-off-filter.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.filter-input-radio:checked + label::before {
+  background-image: url("../img/radio-on-filter.svg");
+  opacity: 0.5;
+}
+.product-filter .filters-button {
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  border: solid 1px #e5e5e5;
+  border-radius: 2px;
+  padding-left: 39px;
+  padding-right: 39px;
+  padding-top: 15px;
+  padding-bottom: 14px;
 }
 
 .info-block-perforators {

@@ -89,8 +89,12 @@
       <li><a class="filter-type-price">По цене</a></li>
       <li><a class="filter-type-type">По типу</a></li>
       <li><a class="filter-type-function">По функционалу</a></li>
-      <li><a class="filter-up"><img src="img/icon-up-dir.svg" alt="Фильтр по возрастанию"></a></li>
-      <li><a class="filter-down"><img src="img/icon-down-dir.svg" alt="Фильтр по убыванию"></a></li>
+      <li><a class="filter-up"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+          <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+      </svg></a></li>
+      <li><a class="filter-down"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+          <path fill="#231F20" d="M5.5 10L0 0h11"/>
+      </svg></a></li>
     </ul>
 </div>
 </div>
@@ -114,25 +118,35 @@
       <fieldset class="filter-manufacturers">
         <legend><h2>Производители</h2></legend>
         <ul>
-    <li class="filter-manufacturers-option"><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" checked>Bosch</label></li>
-    <li class="filter-manufacturers-option"><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Interscol">Интерскол</label></li>
-    <li class="filter-manufacturers-option"><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" checked>Makita</label></li>
-    <li class="filter-manufacturers-option"><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt">Dewalt</label></li>
-    <li class="filter-manufacturers-option"><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi">Hitachi</label></li>
+    <li class="filter-manufacturers-option">
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" checked id="checkbox1">
+        <label for="checkbox1">Bosch</label></li>
+    <li class="filter-manufacturers-option">
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Interscol" id="checkbox2">
+        <label for="checkbox2">Интерскол</label></li>
+    <li class="filter-manufacturers-option">
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" checked id="checkbox3">
+        <label for="checkbox3">Makita</label></li>
+    <li class="filter-manufacturers-option">
+      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="checkbox4">
+      <label for="checkbox4">Dewalt</label></li>
+    <li class="filter-manufacturers-option">
+      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="checkbox5">
+      <label for="checkbox5">Hitachi</label></li>
   </ul>
 </fieldset>
 <fieldset class="filter-energy">
   <legend><h2>Питание:</h2></legend>
   <ul>
-  <li class="filter-energy-option"><label>
-  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="energy" value="akkumulator" checked>
-  Аккумуляторные</label></li>
-  <li class="filter-energy-option"><label>
-    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="energy" value="setevye">
-    Сетевые</label></li>
+  <li class="filter-energy-option">
+  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="energy" value="akkumulator" checked id="checkbox6">
+  <label for="checkbox6">Аккумуляторные</label></li>
+  <li class="filter-energy-option">
+    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="energy" value="setevye" id="checkbox7">
+    <label for="checkbox7">Сетевые</label></li>
   </ul>
 </fieldset>
-<input type="submit" value="Показать">
+<input class="filters-button" type="submit" value="Показать">
 </form>
 </section>
 <section class="catalog-page container">
@@ -248,7 +262,7 @@
     <div class="current-price" href="#">12 500 P.</div>
   </div>
 </div>
-<ul class="pagination-list container">
+<ul class="pagination-list">
   <li class="pagination-item pagination-item-current"><a>1</a></li>
   <li class="pagination-item"><a href="#">2</a></li>
   <li class="pagination-item"><a href="#">3</a></li>
