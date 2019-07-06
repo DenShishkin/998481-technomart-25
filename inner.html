@@ -110,23 +110,27 @@
       <label class="max-price"><input type="text" name="max-price" value="3000"></label>
     </div>
   </div>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="product-filter" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="filter-manufacturers">
         <legend><h2>Производители</h2></legend>
-    <label><input type="checkbox" name="bosch" checked>Bosch</label>
-    <label><input type="checkbox" name="Interscol">Интерскол</label>
-    <label><input type="checkbox" name="makita" checked>Makita</label>
-    <label><input type="checkbox" name="dewalt">Dewalt</label>
-    <label><input type="checkbox" name="hitachi">Hitachi</label>
+        <ul>
+    <li class="filter-manufacturers-option"><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" checked>Bosch</label></li>
+    <li class="filter-manufacturers-option"><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Interscol">Интерскол</label></li>
+    <li class="filter-manufacturers-option"><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" checked>Makita</label></li>
+    <li class="filter-manufacturers-option"><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt">Dewalt</label></li>
+    <li class="filter-manufacturers-option"><label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi">Hitachi</label></li>
+  </ul>
 </fieldset>
 <fieldset class="filter-energy">
   <legend><h2>Питание:</h2></legend>
-  <label>
-  <input type="radio" name="energy" value="akkumulator" checked>
-  Аккумуляторные</label>
-  <label>
-    <input type="radio" name="energy" value="setevye">
-    Сетевые</label>
+  <ul>
+  <li class="filter-energy-option"><label>
+  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="energy" value="akkumulator" checked>
+  Аккумуляторные</label></li>
+  <li class="filter-energy-option"><label>
+    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="energy" value="setevye">
+    Сетевые</label></li>
+  </ul>
 </fieldset>
 <input type="submit" value="Показать">
 </form>
