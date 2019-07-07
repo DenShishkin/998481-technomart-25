@@ -12,7 +12,7 @@
       <div class="header-top">
         <div class="container container-top">
           <a class="main-header-logo">
-            <img src="img/logo.svg" width="" height="" alt="Логотип интернет-магазина Техномарт">
+            <img src="img/logo.svg" width="109px" height="19px" alt="Логотип интернет-магазина Техномарт">
           </a>
 <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
 <input class="search-item" type="text" name="search" placeholder="Поиск:"></input>
@@ -264,9 +264,9 @@
       Техномарт работает со многими транспортными компаниями:<br>
     </p>
     <ul class="transport-companies">
-<li><b>Деловые линии</b></li>
-<li><b>Автотрейдинг</b></li>
-<li><b>ЖелДорЭкспедиция</b></li>
+<li class="bisness-line"><b>Деловые линии</b></li>
+<li class="autotrading"><b>Автотрейдинг</b></li>
+<li class="zheldorexpedition"><b>ЖелДорЭкспедиция</b></li>
     </ul>
   </div>
     <p>
@@ -335,29 +335,36 @@
 </div>
 </div>
 </footer>
+<section class="modal modal-userinfo">
 <form  class="userinfo" action="https://echo.htmlacademy.ru" method="post">
   <fieldset>
-  <label>Ваше имя:
+    <div class="modal-padding">
+  <div class="user-personal-info">
+    <label><p>Ваше имя:</p>
   <input type="text" name="username" placeholder="Имя Фамилия">
 </label>
-<label>Ваш e-mail:
+<label><p>Ваш e-mail:</p>
   <input type="email" name="usemail" placeholder="email@example.com">
 </label>
-<label>Текст письма:
+</div>
+<label><p>Текст письма:</p>
   <textarea rows="7" name="usertext" id="usertextfield" placeholder="В свободной форме"></textarea>
 </label>
-<div class="buttons">
+</div>
+<div class="modal-button-area">
   <input type="submit" value="Отправить">
 </div>
 </fieldset>
+<button class="modal-close-userinfo" type="button">Закрыть</button>
 </form>
-<section class="modal modal-map">
-  <h2 class="visual-hidden">Как до нас добраться</h2>
+</section>
+<section class="modal-map container">
+  <h2 class="visually-hidden">Как до нас добраться</h2>
   <p>
     <img src="img/map.jpg" width="940px" height="446px" alt="Офис компании Техномарт по адресу улица Большая Конюшенная
     19/8, Санкт-Петербург">
   </p>
-  <button class="modal-close" type="button">Закрыть</button>
+  <button class="modal-close-map" type="button">Закрыть</button>
 </section>
   </body>
 </html>
