@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-family: 'Cuprum', 'PT Sans', Arial, sans-serif;
+	font-family: "Cuprum", "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: normal;
@@ -29,8 +29,8 @@ input[type="radio"].visually-hidden {
 	border: 0;
 	padding: 0;
 	white-space: nowrap;
-	clip-path: inset (100%);
-	clip: rect (0 0 0 0);
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
 
@@ -668,14 +668,13 @@ li.categories {
 
 a.categories-entrance {
 	display: block;
-	background: #000000;
-	opacity: 0.1;
-	font-family: "Cuprum";
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
 	text-align: center;
 	color: #ffffff;
+	background: rgba(0,0,0,0.1);
 	text-transform: uppercase;
 	border-radius: 3px;
 	padding-top: 12px;
@@ -901,7 +900,7 @@ i.active::before {
 	margin-bottom: 21px;
 }
 
-.popular-goods-header h2 {
+.popular-goods-header .headline {
 	font-family: inherit;
 	font-size: 30px;
 	font-weight: normal;
@@ -910,6 +909,8 @@ i.active::before {
 	color: #32425c;
 	background-color: inherit;
 	text-transform: uppercase;
+	padding-top: 33px;
+	padding-bottom: 35px;
 }
 
 .popular-manufacturers-header {
@@ -922,7 +923,7 @@ i.active::before {
 	margin-bottom: 20px;
 }
 
-.popular-manufacturers-header h2 {
+.popular-manufacturers-header .headline {
 	font-family: inherit;
 	font-size: 30px;
 	font-weight: normal;
@@ -931,6 +932,8 @@ i.active::before {
 	color: #32425c;
 	background-color: inherit;
 	text-transform: uppercase;
+	padding-top: 33px;
+	padding-bottom: 35px;
 }
 
 a.popular-manufacturers-all {
@@ -990,6 +993,7 @@ a.popular-goods-all {
 	text-align: left;
 	color: #000000;
 	background-color: inherit;
+	max-width: 600px;
 }
 
 .transport-companies {
@@ -1458,7 +1462,10 @@ li .filter-up {
 
 .filters-option-type a {
 	position: relative;
-	color: rgba(0, 0, 0, 0.18);
+	color: rgba(0, 0, 0, 0.3);
+}
+a.filter-type-price {
+	color:#ee3643;
 }
 
 .filter-type-price::after {
@@ -1466,7 +1473,7 @@ li .filter-up {
 	position: absolute;
 	width: 51px;
 	height: 1px;
-	border: 0.6px dotted red;
+	border-bottom: 0.6px dotted red;
 	top: 15px;
 	right: 1px;
 }
@@ -1480,7 +1487,7 @@ li .filter-up {
 	position: absolute;
 	width: 51px;
 	height: 1px;
-	border: 0.6px dotted red;
+	border-bottom: 0.6px dotted red;
 	top: 15px;
 	right: 1px;
 }
@@ -1494,7 +1501,7 @@ li .filter-up {
 	position: absolute;
 	width: 113px;
 	height: 1px;
-	border: 0.6px dotted red;
+	border-bottom: 0.6px dotted red;
 	top: 15px;
 	right: 1px;
 }
@@ -1732,8 +1739,15 @@ li .filter-up {
 	background-color: #f4f7f9;
 }
 
-.info-block-perforators h1 {
+.info-block-perforators .page-title {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 30px;
 	padding-left: 0;
+	padding-bottom: 0;
+	color: #000000;
 }
 
 .info-block-perforators p {
@@ -1815,6 +1829,15 @@ li .filter-up {
 
 .catalog-goods-item {
 	font-size: 18px;
+}
+.catalog-goods-item h4 {
+	font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+	line-height: 20px;
+	color: #000000;
+	text-align: center;
 }
 
 .catalog-goods-item .flag,
@@ -2107,13 +2130,14 @@ a.brand:active {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 74px;
+	max-width: 460px;
 }
 
 .services-options {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	background-image: url("../img/delivery_avto.jpg");
+	background-image: url("../img/delivery.png");
 	background-position: right 0px bottom 0px;
 	background-repeat: no-repeat;
 	background-size: 468px 261px;
@@ -2123,7 +2147,7 @@ a.brand:active {
 	display: none;
 	justify-content: flex-start;
 	align-items: center;
-	background-image: url("../img/guarantee.jpg");
+	background-image: url("../img/guarantee.png");
 	background-position: right 0px bottom 0px;
 	background-repeat: no-repeat;
 	background-size: 389px 283px;
@@ -2133,7 +2157,7 @@ a.brand:active {
 	display: none;
 	justify-content: flex-start;
 	align-items: center;
-	background-image: url("../img/credit.jpg");
+	background-image: url("../img/credit.png");
 	background-position: right 0px bottom 0px;
 	background-repeat: no-repeat;
 	background-size: 465px 285px;
@@ -2240,11 +2264,17 @@ a.option-button:active {
 	display: block;
 	padding-top: 13px;
 	padding-bottom: 15px;
-	padding-left: 17px;
-	padding-right: 15px;
+	padding-left: 16px;
+	padding-right: 16px;
 	border: solid 1px #e5e5e5;
 	border-radius: 2px;
 	background-color: #ffffff;
+	font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+	line-height: 18px;
+	text-align: center;
 }
 
 .pagination-item a:hover,
